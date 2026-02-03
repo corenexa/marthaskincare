@@ -5,19 +5,19 @@ import { Star, Quote } from "lucide-react"
 const testimonials = [
     {
         name: "Aminata Sesay",
-        location: "Freetown, Aberdeen",
+        location: "Makeni",
         comment: "Martha Skincare has completely transformed my skin. The glow is real! I've been using the serum for a month and the results are incredible.",
         rating: 5,
     },
     {
-        name: "Samuel Bangura",
+        name: "Isatu Bah",
         location: "Freetown, Lumley",
         comment: "The delivery was so fast. I ordered in the morning and got my package by afternoon. Very professional service and high-quality products.",
         rating: 5,
     },
     {
         name: "Mariatu Conteh",
-        location: "Freetown, Hill Station",
+        location: "Bo",
         comment: "Finding premium skincare in Freetown used to be hard until I found Martha. The cleanser is so gentle on my sensitive skin. Highly recommend!",
         rating: 5,
     },

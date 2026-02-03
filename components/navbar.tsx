@@ -42,7 +42,7 @@ export default function Navbar({ onCartClick }: NavbarProps) {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl md:text-2xl font-serif font-bold text-foreground transition-all duration-300">
+            <span className="text-xl md:text-2xl font-serif font-bold bg-gradient-to-r from-amber-600 via-orange-500 to-amber-600 bg-clip-text text-transparent transition-all duration-300">
               Martha Skincare
             </span>
           </Link>

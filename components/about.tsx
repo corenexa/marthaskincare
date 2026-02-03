@@ -81,7 +81,7 @@ export default function About() {
       </div>
 
       {/* Our Story Section - Refactored as requested */}
-      <div className="mt-32 relative rounded-[3rem] overflow-hidden min-h-[600px] flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="mt-32 relative rounded-3xl overflow-hidden min-h-[600px] flex items-center justify-center px-4 sm:px-6 lg:px-8">
         {/* Background Image with Dark Gradient */}
         <div className="absolute inset-0">
           <img
@@ -93,7 +93,7 @@ export default function About() {
         </div>
 
         {/* Content in a White Card */}
-        <div className="relative z-10 max-w-7xl w-full bg-white backdrop-blur-sm p-10 md:p-16 rounded-[2.5rem] shadow-2xl animate-in fade-in slide-in-from-bottom-10 duration-1000">
+        <div className="relative z-10 max-w-7xl w-full bg-white backdrop-blur-sm p-10 md:p-16 rounded-3xl shadow-2xl animate-in fade-in slide-in-from-bottom-10 duration-1000">
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#2C2C2C] tracking-tight">Our Story</h2>

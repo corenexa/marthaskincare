@@ -32,7 +32,7 @@ export default function ProductFilters({
             {/* Mobile Toggle Button */}
             <button
                 onClick={() => setIsMobileOpen(true)}
-                className="lg:hidden flex items-center gap-2 px-10 py-2 bg-white/40 border border-border rounded-full shadow-sm text-sm font-medium mb-4"
+                className="lg:hidden mt-10 ml-3 flex items-center gap-2 px-18 py-2 bg-white/40 border border-border rounded-full shadow-sm text-sm font-medium mb-0"
             >
                 <Filter className="w-4 h-4" />
                 Filters
@@ -41,14 +41,14 @@ export default function ProductFilters({
             {/* Mobile Sidebar Overlay */}
             {isMobileOpen && (
                 <div
-                    className="fixed inset-0 z-[60] bg-black/50 lg:hidden animate-in fade-in duration-300"
+                    className="fixed inset-0 z-[50] bg-black/50 lg:hidden animate-in fade-in duration-300"
                     onClick={() => setIsMobileOpen(false)}
                 />
             )}
 
             {/* Sidebar Content */}
             <aside
-                className={`fixed inset-y-0 text-black left-0 z-[70] w-full max-w-xs bg-white/60 p-8 overflow-y-auto transition-transform duration-300 lg:relative lg:inset-auto lg:z-0 lg:w-64 lg:p-0 lg:bg-transparent lg:translate-x-0 ${isMobileOpen ? "translate-x-0" : "-translate-x-full"
+                className={`fixed inset-y-0 text-black left-0 z-[70] w-full max-w-xs bg-white p-8 overflow-y-auto transition-transform duration-300 lg:relative lg:inset-auto lg:z-0 lg:w-64 lg:p-0 lg:bg-transparent lg:translate-x-0 ${isMobileOpen ? "translate-x-0" : "-translate-x-full"
                     }`}
             >
                 <div className="flex items-center justify-between lg:hidden mb-8">
@@ -141,7 +141,7 @@ export default function ProductFilters({
             </aside>
 
             <div className="py-30 bg-white">
-                
+
             </div>
         </>
     )

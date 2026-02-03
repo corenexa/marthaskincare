@@ -184,7 +184,7 @@ export default function ProductShowcase({
 
         <div className={`flex flex-col ${isSidebarLayout ? "lg:flex-row min-h-screen" : ""}`}>
           {isSidebarLayout && (
-            <div className="lg:w-80 bg-white border-r border-border shrink-0 p-8 pt-12">
+            <div className="lg:w-80 bg-white lg:border-r border-border shrink-0 p-0 lg:p-8 lg:pt-12">
               <ProductFilters
                 categories={CATEGORIES}
                 selectedCategories={selectedCategories}
@@ -195,7 +195,7 @@ export default function ProductShowcase({
             </div>
           )}
 
-          <div className={`flex-1 ${isSidebarLayout ? "bg-background/95 p-8 md:p-12 lg:p-16" : ""}`}>
+          <div className={`flex-1 ${isSidebarLayout ? "bg-background/95 px-4 mt-[-180px] md:mt-0 pt-8 pb-8 md:p-12 lg:p-16" : ""}`}>
             <div className={`mb-12 ${isSidebarLayout ? "text-left" : "text-center"}`}>
               <h2 className="text-3xl md:text-5xl font-serif font-bold text-[#2C2C2C] mb-4">
                 {isFeatured ? "Featured Collection" : (selectedCategories.length === 0 ? "Our Collection" : "Filtered Collection")}

@@ -7,7 +7,7 @@ export default function CTA() {
     return (
         <section className="py-24 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto">
-                <div className="relative rounded-[3rem] overflow-hidden min-h-[500px] flex items-center justify-center">
+                <div className="relative rounded-3xl overflow-hidden min-h-[500px] flex items-center justify-center">
                     {/* Background Image with Dark Overlay */}
                     <div className="absolute inset-0">
                         <img
