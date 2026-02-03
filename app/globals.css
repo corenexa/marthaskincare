@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #F6F1EC;
+  --foreground: #2C2C2C;
+  --card: #FFFFFF;
+  --card-foreground: #2C2C2C;
+  --popover: #FFFFFF;
+  --popover-foreground: #2C2C2C;
+  --primary: #C9A66B;
+  --primary-foreground: #FFFFFF;
+  --secondary: #E9E1D8;
+  --secondary-foreground: #2C2C2C;
+  --muted: #F0EAE4;
+  --muted-foreground: #6F6F6F;
+  --accent: #D4AF37;
+  --accent-foreground: #F6F1EC;
+  --destructive: #A94442;
+  --destructive-foreground: #F6F1EC;
+  --border: #D8D1C9;
+  --input: #D8D1C9;
+  --ring: #D4AF37;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: #1A1A1A;
+  --foreground: #F6F1EC;
+  --card: #262626;
+  --card-foreground: #F6F1EC;
+  --popover: #262626;
+  --popover-foreground: #F6F1EC;
+  --primary: #C9A66B;
+  --primary-foreground: #FFFFFF;
+  --secondary: #333333;
+  --secondary-foreground: #F6F1EC;
+  --muted: #404040;
+  --muted-foreground: #D8D1C9;
+  --accent: #D4AF37;
+  --accent-foreground: #1A1A1A;
+  --destructive: #A94442;
+  --destructive-foreground: #F6F1EC;
+  --border: #404040;
+  --input: #404040;
+  --ring: #D4AF37;
+}
+
+@theme inline {
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+  }
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #F6F1EC 0%, #E9E1D8 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.shimmer {
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+}
